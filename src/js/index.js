@@ -14,9 +14,6 @@ var mouse = {x:0, y:0}; //mouse.x, mouse.y
 function getMouse(e){
 	mouse.x = e.pageX;
 	mouse.y = e.pageY;
-
-console.log('X: ' + e.pageX);
-console.log('Y: ' + e.pageY);
 }
 
 function followMouse(){

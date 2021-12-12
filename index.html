@@ -5,21 +5,67 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="./vendor/locomotive/main.css">
   <link rel="stylesheet" href="src/styles/style.css">
   <title>Document</title>
 </head>
 <body>
-  <div id="maxCircle" class="maxCircle"></div>
+
+	<!-- CURSOR -->
+  
+	<div id="maxCircle" class="maxCircle"></div>
   <div id="mediumCircle" class="mediumCircle"></div>
   <div id="minCircle" class="minCircle"></div>
+	
+	<!-- CURSOR -->
+  
+	<!-- FIRST VIEW -->
 
-  <div class="test">
+	<div class="lens-container" onclick="audioplay()">
+
+		<audio autoplay>
+			<source src="./src/rsc/audio/DSLRcameraFocusShutter.mp3" type="audio/mp3">
+		</audio>
+
+		<main>
+			<svg viewBox="0 0 100 100">
+				<path d="M 0,50 a 50,50 0 1,1 0,1 z" id="circle" />
+				<text>
+					<textPath xlink:href="#circle">
+						Manolo Pascual
+					</textPath>
+				</text>
+			</svg>
+			<input type="text" id="manolo" style="display: none;" value="manolo">
+		</main>
+
+		<div class="container">
+			<div class="shadow"></div>
+			<div class="ring"></div>
+			<div class="shutter">
+				<div class="shutter-overt-up"></div>
+				<div class="shutter-overt-down"></div>
+				<div class="lens-outer"></div>
+				<div class="lens"></div>
+				<div class="leaf a"></div>
+				<div class="leaf b"></div>
+				<div class="leaf c"></div>
+			</div>
+			<div class="flare"></div>
+			<div class="flare2"></div>
+			<div class="flare3"></div>
+		</div>
+
+	</div>
+
+	<!-- FIRST VIEW -->
+
+	<div class="test">
     <div>
       <p class="test-clip" onmouseenter="hoverTest()" onmouseleave="noHoverTest()">Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón Playa de mazagón </p>
     </div>
   </div>
   
+  <script type="text/javascript" src="./vendor/jquery.min.js"></script>
   <script type="text/javascript" src="src/js/index.js"></script>
   <script type="text/javascript">
 
