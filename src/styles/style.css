@@ -66,6 +66,7 @@ body {
   animation-timing-function: ease-in-out;
   animation-duration: 5.6s;
   animation-iteration-count: 1;
+  animation-play-state: paused;
   opacity: 0;
 }
 
@@ -134,6 +135,7 @@ body {
   background-image:      -o-linear-gradient(to bottom, #d5d7e5, #eee, #d5d7e5);
   box-shadow: 0 .375em .375em -.375em #727272;
 	animation: circular-text-rotate 2.5s linear 1;
+  animation-play-state: paused;
 	transform: rotate(45deg);
 }
 
@@ -435,7 +437,7 @@ body {
   transform: rotateX(30deg);
 }
 
-main {
+main.circleText {
 	width: 230px; 
 	height: 230px;
 	font-size: 12px;
@@ -446,17 +448,18 @@ main {
 	z-index: 2;
 }
 
-main svg {
+main.circleText svg {
 	overflow: visible;
 	animation: circular-text-rotate 2.5s linear 1;
 	transform: rotate(45deg);
+  animation-play-state: paused;
 }
 
-main path {
+main.circleText path {
 	fill: none;
 }
 
-main text {
+main.circleText text {
 	fill: #111111;
 }
 
@@ -472,6 +475,7 @@ main text {
   animation-timing-function: linear;
   animation-duration: .3s;
   animation-delay: 3s;
+  animation-play-state: paused;
 }
 
 @keyframes overture {
@@ -531,12 +535,17 @@ main text {
 /* LENS END */
 
 .test {
-  display: none;
+  display: block;
   width: 667px;
   height: 375px;
   background-image: url('https://fotos.hoteles.net/articulos/mazagon-huelva-8613-1.jpg');
   overflow: hidden;
   transition: .5s;
+  animation-name: insideCamera;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-play-state: paused;
 }
 
 .test div {
@@ -580,3 +589,86 @@ p.test-clip {
   height: 100%;
   background: radial-gradient(rgba(0,0,0,0), rgba(17,17,17,1) 70%);
 }
+
+/* MUSIC ON */
+
+.music-on {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, .6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.music-on-pop {
+  position: relative;
+  background: #ffffff;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: 4px 0 20px rgba(0,0,0,.20);
+  padding: 20px;
+  animation-name: musicOn;
+  animation-duration: .3s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes musicOn {
+  0%{
+    margin-top: -150vh;
+  }
+
+  100%{
+    margin-top: 0vh;
+  }
+}
+
+.music-on-pop h3 {
+  text-align: center;
+  font-size: 22px;
+}
+
+.music-on-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+
+/* MUSIC ON */
+
+/* MAIN */
+
+main.insideCamera {
+  position: relative;
+  display: none;
+  font-size: 40px;
+  background: #111111;
+  color: #ffffff;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes insideCamera {
+  0%{
+    transform: scale(0);
+    opacity: 0;
+  }
+  
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* MAIN */
